@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/v4-shims.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="navbar-logo">
+            <a class="navbar-toggler burger-menu" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </a>
+            <a class="navbar-brand" href="#">
+                <img src="./img/ZipRecruiter_logo_dark_web__1_.webp" alt="logo" width="200" height="44">
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Suggested Jobs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Post a Job</a>
+              </li>
+            </ul>
+        </div>
+
+
+        <div class="d-flex">
+            <div class="dropdown account-navbar">
+                <button type="button" class="btn account-nav-link" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="nav-link-icon fa fa-user"></i> 
+                        <span class="hidden-xs">
+                            Job Seekers
+                            <span class="link-arrow">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </span>   
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu">
+                    <a class="dropdown-item" href="#">Log in</a>
+                    <a class="dropdown-item" href="#">Create your Profile</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="btn  account-nav-link1" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="nav-link-icon fa fa-building"></i> 
+                    <span class="hidden-xs">  
+                        Employers
+                        <span class="link-arrow1">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+                    <a class="dropdown-item" href="#">Log in</a>
+                    <a class="dropdown-item" href="#">Create Employer Account</a>
+                </div>
+            </div>
+        </div>
+      
+    </nav>
+    
+    <header class="hero">
+        <div class="container-fluid hero-container">
+            <h1 class="heading">Let's Find Jobs for You</h1>
+            <p class="sub-heading">Any industry. Any location. Any experience level.</p>
+            <form>
+                <div class="input-group">
+                    <input type="text" class="form-control hero-input input-keywords" placeholder="Keywords">
+                    <i class="fa fa-search search-icon" aria-hidden="true"></i>
+                </div>
+                <div class="input-group">
+                    <input type="text" class="form-control hero-input input-location" placeholder="Location">
+                    <i class="fa fa-map-marker location-icon" aria-hidden="true"></i>
+                </div>
+                <div class="input-group">
+                    <a class="btn d-flex hero-input input-distance" href="#" role="button" id="heroSelect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="hero-link-text">Distance</span> 
+                        <i class="fa fa-compass distance-icon" aria-hidden="true"></i>
+                        <span class="ml-auto ml-md-2">
+                            <i class="distanceArrow fas fa-chevron-down"></i>
+                        </span>
+                    </a>
+                    
+                    <div class="dropdown-menu dropdown-menu-right menu-distance" aria-labelledby="heroSelect">
+                        <a class="dropdown-item" href="#">5 Miles</a>
+                        <a class="dropdown-item" href="#">10 Miles</a>
+                        <a class="dropdown-item" href="#">20 Miles</a>
+                        <a class="dropdown-item" href="#">50 Miles</a>
+                        <a class="dropdown-item" href="#">100 Miles</a>
+                        <a class="dropdown-item" href="#">Any</a>
+                    </div>
+                </div>
+                <button type="button" class="btn hero-btn">Search</button>
+            </form>
+            <div class="hero-badge-group">
+                <p class="mb-0">
+                    <i class="fa fa-line-chart" aria-hidden="true"></i>
+                     Trending Searches:
+                </p>
+                <a href="#" class="badge-search"> <span><i class="fa fa-search mr-1" aria-hidden="true"></i></span> Remote</a>
+                <a href="#" class="badge-search"> <span><i class="fa fa-search mr-1" aria-hidden="true"></i></span> Work from Home</a>
+                <a href="#" class="badge-search"> <span><i class="fa fa-search mr-1" aria-hidden="true"></i></span> Virtual</a>
+                <a href="#" class="badge-search"> <span><i class="fa fa-search mr-1" aria-hidden="true"></i></span> Covid-19</a> 
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="zip-container">
+            <div class="zip-item">
+                <div class="row">
+                    <div class="col-12 col-lg-6 order-2 order-lg-0 zip-image1">
+                        <img src="img/map_updated_UK.svg" alt="image">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <h2 class="headline">Over 1 Million Jobs</h2>
+                        <p class="sub-head">There's no need to look anywhere else. With over 1 million jobs, ZipRecruiter is the only site you'll ever need to find your next job.</p>
+                        <a class="zip-btn" href="#">Find Your Future Job</a>
+                    </div>
+                </div>
+            </div>
+            <div class="zip-item">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <h2 class="headline">Sign Up to Get Job Alerts</h2>
+                        <p class="sub-head">Our powerful matching technology will send job matches right to your inbox.</p>
+                        <a class="zip-btn" href="#">Find Your Future Job</a>
+                    </div>
+                    <div class="col-12 col-lg-6 order-2 order-lg-0 zip-image">
+                        <img src="img/mobile_and_desktop_alerts.svg" alt="image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid">
+            <div class="content-reviews">
+                <div class="quotesId">
+                    <p class="quotes">ZipRecruiter made the search way faster and easier and told me when companies would view my applications. Eventually I got a call for the position I wanted with a great company close to where I live!</p>
+                    <p class="autor">-Ryan Gordon</p>
+                </div>
+                <div class="quotesId">
+                    <p class="quotes">ZipRecruiter got me my first real job after I graduated from college. Thanks to them, I am now able to be in this world as a functional, working adult. Hooray for salary! No more clocking in!</p>
+                    <p class="autor">-Kyle Mouallem</p>
+                </div>
+                <div  class="quotesId">
+                    <p class="quotes">I was able to get a great full time position even before finishing my last semester of college.I couldn’t have asked for a better entry level position and I love my job. Thank you ZipRecruiter!</p>
+                    <p class="autor">– Juhi Rathod</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <h4 class="footer-headline">For Job Seekers</h4>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#">Search Jobs</a>
+                        </li>
+                        <li>
+                            <a href="#">Browse Jobs</a>
+                        </li>
+                        <li>
+                            <a href="#">Create Free Account</a>
+                        </li>
+                        <li>
+                            <a href="#">Support</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h4 class="footer-headline">Partner with Us</h4>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#">Sponsored Reach</a>
+                        </li>
+                        <li>
+                            <a href="#">Partners</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h4 class="footer-headline">Company</h4>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Corporate Responsability</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h4 class="footer-headline">Contact Us</h4>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#">Email Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Call +44800 031 8659</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="social-group">
+                <li class="social-item">
+                    <a href="https://www.facebook.com/ZipRecruiter" title="Follow ZipRecruiter on Facebook" class="facebook">
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="https://twitter.com/ziprecruiter" title="Follow ZipRecruiter on Twitter" class="twitter">
+                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="https://www.linkedin.com/company/ziprecruiter/" title="Follow ZipRecruiter on LinkedIn" class="linkedin">
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
